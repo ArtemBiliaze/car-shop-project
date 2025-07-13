@@ -4,3 +4,4 @@ Thumbs.db
 
 #Папки редактора
 .vscode/
+node_modules/
