@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cars info</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/images/sport-car.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700family=Roboto&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <form class="form-order">
+      <h1>Form for Order</h1>
+      <fieldset>
+        <legend>Personal Info:</legend>
+        <div class="form-elem">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname">
+        </div>
+        <div class="form-elem">
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname">
+        </div>
+        <div class="form-elem">
+          <label for="birthday">Birthday</label>
+          <input type="date" id="birthday">
+        </div>
+        <div class="form-elem">
+          <label>Gender:</label>
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="gender">
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender">
+        </div>
+        <div class="form-elem">
+          <label for="experience">Drive Experience</label>
+          <select id="experience">
+            <option value="---">---</option>
+            <option value="1-year">1-year</option>
+            <option value="3-year">3-year</option>
+            <option value="5-year">5-year</option>
+            <option value="10-year">10-year</option>
+            <option value="10+ year">10+ year</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Contacts:</legend>
+        <div class="form-elem">
+          <label for="email">Email:</label>
+          <input type="email" id="email">
+        </div>
+        <div class="form-elem">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone">
+        </div>
+        <div class="form-elem">
+          <label for="address">Address</label>
+          <textarea id="address" cols="30" rows="5"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Car Info:</legend>
+        <div class="form-elem">
+          <label for="brand">Brand</label>
+          <select id="brand">
+            <option value="---">---</option>
+            <option value="ford">Ford</option>
+            <option value="toyota">Toyota</option>
+            <option value="bmw">Bmw</option>
+          </select>
+        </div>
+        <div class="form-elem">
+          <label for="model">Model</label>
+          <select id="model">
+            <option value="---">---</option>
+            <option value="mustang-gt-fastback">Mustang GT Fastback</option>
+            <option value="explorer-st">Explorer ST</option>
+            <option value="corolla-sedan 2.0">Corolla Sedan 2.0</option>
+            <option value="rav4-2.5-hybrid-awd">RAV4 2.5 Hybrid AWD</option>
+            <option value="3-series(20)">3 Series(20)</option>
+            <option value="x5-xdrive40i">X5 xDrive40i</option>
+          </select>
+        </div>
+        <div class="form-elem">
+          <label for="used">Used</label>
+          <input type="checkbox" id="used">
+        </div>
+        <div class="form-elem">
+          <label>Color:</label>
+          <div>
+            <label class="color"><input type="radio" name="color" value="red">Red</label>
+            <label class="color"><input type="radio" name="color" value="black">Black</label>
+            <label class="color"><input type="radio" name="color" value="blue">Blue</label>
+            <label class="color"><input type="radio" name="color" value="white">White</label>
+            <label class="color"><input type="radio" name="color" value="grey">Grey</label>
+          </div>
+        </div>
+        <div class="form-price">
+          <label for="price">Price</label>
+          <input type="range" id="price" name="price" min="10" max="100" step="5" list="money">
+          <div>
+            <datalist id="money">
+              <option value="10" label="10"></option>
+              <option value="15" label="15"></option>
+              <option value="20" label="20"></option>
+              <option value="25" label="25"></option>
+              <option value="30" label="30"></option>
+              <option value="35" label="35"></option>
+              <option value="40" label="40"></option>
+              <option value="45" label="45"></option>
+              <option value="50" label="50"></option>
+              <option value="55" label="55"></option>
+              <option value="60" label="60"></option>
+              <option value="65" label="65"></option>
+              <option value="70" label="70"></option>
+              <option value="75" label="75"></option>
+              <option value="80" label="80"></option>
+              <option value="85" label="85"></option>
+              <option value="90" label="90"></option>
+              <option value="95" label="95"></option>
+              <option value="100" label="100"></option>
+            </datalist>
+          </div>
+        </div>
+      </fieldset>
+      <button type="reset">Cancel</button>
+      <button type="submit">Ok</button>
+      <div>
+        <a href="./index.html">back to menu</a>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
